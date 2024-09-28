@@ -11,6 +11,9 @@ import { PetCardComponent } from './components/pet-card/pet-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import { EditComponent } from './components/edit/edit.component';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 @NgModule({
@@ -20,14 +23,16 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ProductsComponent,
     NavbarComponent,
-    PetCardComponent
+    PetCardComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

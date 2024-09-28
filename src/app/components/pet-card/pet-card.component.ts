@@ -14,6 +14,9 @@ export class PetCardComponent implements OnInit {
     @Input()
     showPetDescription!: boolean;
 
+    @Input()
+    showButtons!: boolean;
+
     constructor() { }
 
     ngOnInit(): void {
