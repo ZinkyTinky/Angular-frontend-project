@@ -12,11 +12,19 @@ export class ProductsComponent implements OnInit {
   petList: Pets[] = [];
   showButtons: boolean = true;
 
+  searchWord: string = '';
+
   constructor(private petService: PetService) { }
 
 
   ngOnInit() {
     this.petService.getAllPets().subscribe((data) => {
+      this.petList = data;
+    });
+  }
+
+  searchPet() {
+    this.petService.searchPet(this.searchWord).subscribe((data) => {
       this.petList = data;
     });
   }

@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Pets } from 'src/app/models/pets';
+import { PetService } from 'src/app/services/pet.service';
 
 @Component({
   selector: 'app-pet-card',
@@ -18,7 +19,7 @@ export class PetCardComponent implements OnInit {
     @Input()
     showButtons!: boolean;
 
-    constructor(private router: Router) { }
+    constructor(private router: Router, private petService: PetService) { }
 
     ngOnInit(): void {
     }
@@ -27,12 +28,14 @@ export class PetCardComponent implements OnInit {
         this.router.navigate([`products/`, this.pet.id]);
     }
 
-    deleteClick(){
-
+    deleteClick(id: number) {
+      this.petService.deletePet(id).subscribe(() => {
+        this.router.navigate([`products/`]);
+        window.location.reload();
+      });
     }
 
     editClick(){
       this.router.navigate([`edit/`, this.pet.id]);
     }
-
 }

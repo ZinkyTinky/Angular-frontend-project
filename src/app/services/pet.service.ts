@@ -36,4 +36,8 @@ export class PetService {
   deletePet(id: number): Observable<void> {
     return this.http.delete<void>(`${this.dataSource}/${id}`);
   }
+
+  searchPet(search: string): Observable<Pets[]> {
+    return this.http.get<Pets[]>(`${this.dataSource}?q=${search}`);
+  }
 }
