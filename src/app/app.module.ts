@@ -7,6 +7,10 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProductsComponent } from './components/products/products.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PetCardComponent } from './components/pet-card/pet-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +18,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HomeComponent,
     AboutComponent,
     ProductsComponent,
-    NavbarComponent
+    NavbarComponent,
+    PetCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
