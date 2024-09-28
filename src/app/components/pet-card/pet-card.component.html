@@ -20,9 +20,9 @@
 
     <div class="buttons" *ngIf="showButtons">
       <mat-card-actions>
-        <button mat-button>View</button>
-        <button mat-button>Edit</button>
-        <button mat-button>Delete</button>
+        <button (click)="viewClick()" mat-button>View</button>
+        <button (click)="editClick()" mat-button>Edit</button>
+        <button (click)="deleteClick()" mat-button>Delete</button>
       </mat-card-actions>
     </div>
   </mat-card>

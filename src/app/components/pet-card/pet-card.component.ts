@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Pets } from 'src/app/models/pets';
 
 @Component({
@@ -17,9 +18,21 @@ export class PetCardComponent implements OnInit {
     @Input()
     showButtons!: boolean;
 
-    constructor() { }
+    constructor(private router: Router) { }
 
     ngOnInit(): void {
+    }
+
+    viewClick() {
+        this.router.navigate([`view/`, this.pet.id]);
+    }
+
+    deleteClick(){
+
+    }
+
+    editClick(){
+      this.router.navigate([`edit/`, this.pet.id]);
     }
 
 }
