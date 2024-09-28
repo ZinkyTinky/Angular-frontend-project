@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Pets } from 'src/app/models/pets';
 
 @Component({
   selector: 'app-pet-card',
@@ -8,16 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PetCardComponent implements OnInit {
 
     @Input()
-    animalName: string = '';
-
-    @Input()
-    description: string = '';
-
-    @Input()
-    price: number = 0;
-
-    @Input()
-    image: string = '';
+    pet: Pets = new Pets();
 
     constructor() { }
 
