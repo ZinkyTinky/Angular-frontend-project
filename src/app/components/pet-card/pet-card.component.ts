@@ -24,7 +24,7 @@ export class PetCardComponent implements OnInit {
     }
 
     viewClick() {
-        this.router.navigate([`view/`, this.pet.id]);
+        this.router.navigate([`products/`, this.pet.id]);
     }
 
     deleteClick(){

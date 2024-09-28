@@ -1,0 +1,16 @@
+<div class="container">
+    <img [src]="pet.imageUrl" [alt]="pet.name">
+    <h1>{{pet.name}}</h1>
+
+    <div class="body">
+        <p>{{pet.description}}</p>
+        <p>${{pet.price}}</p>
+        <p>{{pet.petType}}</p>     
+    </div>
+
+    <div class="btns">
+        <button (click)="backClick()" mat-button>Back</button>
+        <button (click)="editClick()" mat-button>Edit</button>
+        <button (click)="deleteClick()" mat-button>Delete</button>
+    </div>
+</div>

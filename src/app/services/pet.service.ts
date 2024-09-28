@@ -20,4 +20,20 @@ export class PetService {
       map(data => data.slice(0, 3))
     );
   }
+
+  getPetById(id: number): Observable<Pets> {
+    return this.http.get<Pets>(`${this.dataSource}/${id}`);
+  }
+
+  addPet(pet: Pets): Observable<Pets> {
+    return this.http.post<Pets>(this.dataSource, pet);
+  }
+
+  updatePet(id: number, pet: Pets): Observable<Pets> {
+    return this.http.put<Pets>(`${this.dataSource}/${id}`, pet);
+  }
+
+  deletePet(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.dataSource}/${id}`);
+  }
 }

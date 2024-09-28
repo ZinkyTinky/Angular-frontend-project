@@ -1,7 +1,7 @@
 <div class="container">
   <div class="headers">
     <h1>Find your new family friend!</h1>
-    <button mat-flat-button>Add</button>
+    <button mat-flat-button [routerLink]="'add'">Add</button>
   </div>
   <div class="pets" *ngFor="let pet of petList">
     <app-pet-card [pet]="pet" [showButtons]="showButtons"></app-pet-card>
