@@ -1,17 +1,7 @@
 <mat-card class="example-card" appearance="outlined">
     <mat-card-header>
-      <mat-card-title>{{pet.Name}}</mat-card-title>
-      <mat-card-subtitle>{{pet.price}}</mat-card-subtitle>
+      <mat-card-title>{{pet.name}}</mat-card-title>
+      <mat-card-subtitle>${{pet.price}}</mat-card-subtitle>
     </mat-card-header>
-    <img id="dynamicImage" mat-card-image>
-    <mat-card-content>
-      <p>
-        {{pet.description}}
-      </p>
-    </mat-card-content>
+    <img class="imgClass" [src]="pet.imageUrl" [alt]="pet.name" mat-card-image>
   </mat-card>
-
-  <script>
-    document.getElementById("dynamicImage").src = pet.image;
-    document.getElementById("dynamicImage").alt = "Photo of " + pet.name;
-  </script>
