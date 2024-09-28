@@ -1,0 +1,36 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "name": "Bob",
+      "imageUrl": "https://images.unsplash.com/photo-1493548578639-b0c241186eb0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 50,
+      "description":"Bob is a beloved household friend with many cute quirks and a love for cuddles.",
+      "petType": "Cat"
+    },
+    {
+      "id": 2,
+      "name": "Truffles",
+      "imageUrl": "https://images.unsplash.com/photo-1526674183561-4bfb419ab4e5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8T3JhbmdlJTIwY2F0fGVufDB8fDB8fHww",
+      "price": 100,
+      "description":"Truffles is a playful and energetic kitten who loves to play with toys and chase after balls of yarn.",
+      "petType": "Cat"
+    },
+    {
+      "id": 3,
+      "name": "Fudge",
+      "imageUrl": "https://images.unsplash.com/photo-1727284898906-74626a8d8694?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TWFsdGVzZSUyMHBvb2RsZXxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 75,
+      "description":"Fudge is a sweet and gentle dog who loves to curl up on your lap and soak in the love.",
+      "petType": "Dog"
+    },
+    {
+      "id": 4,
+      "name": "Jasper",
+      "imageUrl": "https://images.unsplash.com/photo-1639374937078-886e07d66ca3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sZGVuJTIwcmV0cmlldmVyJTIwcHVwcHl8ZW58MHx8MHx8fDA%3D",
+      "price": 200,
+      "description":"Jasper is a loyal and friendly dog who loves to go on long walks and play fetch.",
+      "petType": "Dog"
+    }
+  ]
+}
