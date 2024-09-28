@@ -1,14 +1,21 @@
-<mat-card class="example-card" appearance="outlined">
-  <mat-card-header>
-    <mat-card-title>{{ pet.name }}</mat-card-title>
-    <mat-card-subtitle>${{ pet.price }}</mat-card-subtitle>
-  </mat-card-header>
-  <img class="imgClass" [src]="pet.imageUrl" [alt]="pet.name" mat-card-image />
-  <div class="description" *ngIf="showPetDescription">
-    <mat-card-content>
-      <p>
-        {{ pet.description }}
-      </p>
-    </mat-card-content>
-  </div>
-</mat-card>
+<div class="petCards">
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>{{ pet.name }}</mat-card-title>
+      <mat-card-subtitle>${{ pet.price }}</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      class="imgClass"
+      [src]="pet.imageUrl"
+      [alt]="pet.name"
+      mat-card-image
+    />
+    <div class="description" *ngIf="showPetDescription">
+      <mat-card-content>
+        <p>
+          {{ pet.description }}
+        </p>
+      </mat-card-content>
+    </div>
+  </mat-card>
+</div>

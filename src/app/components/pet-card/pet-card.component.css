@@ -1,0 +1,8 @@
+.petCards img{
+    width:80%;
+}
+
+.petCards{
+    display: flex;
+    width: 200px;
+}
