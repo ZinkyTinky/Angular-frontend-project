@@ -1,4 +1,4 @@
-<form #petForm="ngForm" (ngSubmit)="onSubmit()">
+<form #petForm="ngForm" (ngSubmit)="onSubmit()" class="form">
     <mat-form-field appearance="outline">
       <mat-label>Pet Name</mat-label>
       <input matInput name="name" [(ngModel)]="pet.name">

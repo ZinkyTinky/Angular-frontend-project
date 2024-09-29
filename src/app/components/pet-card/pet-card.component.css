@@ -1,8 +1,14 @@
 .petCards img{
-    width:80%;
+    height: 200px;
+    width: 300px;
 }
 
 .petCards{
     display: flex;
     width: 200px;
+    padding: 100px;
+}
+
+.buttons{
+    background-color: #52b69a;
 }

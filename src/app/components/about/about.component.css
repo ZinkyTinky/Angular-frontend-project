@@ -1,0 +1,13 @@
+img{
+    width: 500px;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+}
+
+#body{
+    padding-left: 30px;
+}
+

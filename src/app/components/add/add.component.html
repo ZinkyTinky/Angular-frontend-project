@@ -1,29 +1,29 @@
-<form #petForm="ngForm" (ngSubmit)="onSubmit()">
-    <!-- Pet Name -->
+<form #petForm="ngForm" (ngSubmit)="onSubmit()" class="form">
+
     <mat-form-field appearance="outline">
       <mat-label>Pet Name</mat-label>
       <input matInput name="name" [(ngModel)]="pet.name">
     </mat-form-field>
   
-    <!-- Image URL -->
+
     <mat-form-field appearance="outline">
       <mat-label>Image URL</mat-label>
       <input matInput name="imageUrl" [(ngModel)]="pet.imageUrl">
     </mat-form-field>
   
-    <!-- Price -->
+
     <mat-form-field appearance="outline">
       <mat-label>Price</mat-label>
       <input matInput type="number" name="price" [(ngModel)]="pet.price">
     </mat-form-field>
   
-    <!-- Description -->
+
     <mat-form-field appearance="outline">
       <mat-label>Description</mat-label>
       <textarea matInput name="description" [(ngModel)]="pet.description"></textarea>
     </mat-form-field>
   
-    <!-- Pet Type (Dropdown) -->
+
     <mat-form-field appearance="outline">
       <mat-label>Pet Type</mat-label>
       <mat-select name="petType" [(ngModel)]="pet.petType">
@@ -31,8 +31,7 @@
         <mat-option value="Cat">Cat</mat-option>
       </mat-select>
     </mat-form-field>
-  
-    <!-- Submit Button -->
+
     <button mat-raised-button color="primary" type="submit">Add Pet</button>
     <button mat-button (click)="backClick()">Back</button>
   </form>
